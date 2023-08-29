@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b7d37b;;
+}
+.container
+{
+    max-width: 450px;
+    background: #81240a;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+    padding: 30px; 
+    text-align: center;
+}
+.title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+}
+.temp-icon
+{
+    font-size: 60px;
+    color: #fff;
+    order: -1;
+}
+h2
+{
+    color: rgb(255, 216, 168);
+    letter-spacing: 1.3px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.input-space
+{
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+}
+.input-space h5
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: blanchedalmond; 
+    text-align: center;
+    position: absolute;
+    padding-bottom: 75px;
+}
+.input-space input
+{
+    flex: 1;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    padding: 0 15px;
+}
+
+.input-space input::-webkit-outer-spin-button,
+.input-space input::-webkit-inner-spin-button
+{
+    display: none;
+}
+
+.input-space .icon
+{
+    flex: 5;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    background: #c86b0f;
+    padding: 0 5px;
+}
+.clear
+{
+    margin-top: 10px;
+    text-align: center;
+}
+.clear button
+{
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.clear button:hover
+{
+    background: transparent;
+    color: bisque;
+    border: 2px solid #eeae00;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-bottom: 5px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .input-space h5 {
+        font-size: 16px;
+        padding-bottom: 65px;
+    }
+
+    .input-space input {
+        height: 40px;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .input-space .icon {
+        font-size: 20px;
+        height: 40px;
+    }
+
+    .clear button {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+}
