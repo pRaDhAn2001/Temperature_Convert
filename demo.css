@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-body
-{
+
+body {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #b7d37b;;
+    background: #b7d37b;
 }
-.container
-{
+
+.container {
     max-width: 450px;
     background: #81240a;
     border-radius: 15px;
@@ -23,87 +23,90 @@ body
     padding: 30px; 
     text-align: center;
 }
-.title
-{
+
+.title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     gap: 10px;
 }
-.temp-icon
-{
+
+.temp-icon {
     font-size: 60px;
     color: #fff;
     order: -1;
 }
-h2
-{
+
+h2 {
     color: rgb(255, 216, 168);
     letter-spacing: 1.3px;
-    font-size: 25px;
+    font-size: 26px;
     margin-bottom: 10px;
 }
-.input-space
-{
-    justify-content: center;
+
+.input-space {
+    display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 30px;
     margin-bottom: 40px;
-    display: flex;
 }
-.input-space h5
-{
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-container h5 {
     font-size: 20px;
     font-weight: 500;
-    color: blanchedalmond; 
-    text-align: center;
-    position: absolute;
-    padding-bottom: 75px;
+    color: blanchedalmond;
+    text-align: center; 
+    justify-content: center;   
+    margin-left: 30px;
 }
-.input-space input
-{
-    flex: 1;
+
+.input-container input {
     height: 45px;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    justify-content: center;
     border: none;
     outline: none;
     border-radius: 10px 0 0 10px;
     padding: 0 15px;
 }
 
-.input-space input::-webkit-outer-spin-button,
-.input-space input::-webkit-inner-spin-button
-{
+.input-container input::-webkit-outer-spin-button,
+.input-container input::-webkit-inner-spin-button {
     display: none;
 }
 
-.input-space .icon
-{
-    flex: 5;
+.icon {
     height: 45px;
     line-height: 45px;
     font-size: 25px;
     font-weight: 600;
-    text-align: center;
+    margin-top: 36px;
+    margin-left: 5px;
     border: none;
     outline: none;
     border-radius: 0 10px 10px 0;
     color: #fff;
     background: #c86b0f;
     padding: 0 5px;
+
 }
-.clear
-{
+
+.clear {
     margin-top: 10px;
     text-align: center;
 }
-.clear button
-{
+
+.clear button {
     border: none;
     outline: none;
     padding: 8px 15px;
@@ -113,8 +116,8 @@ h2
     cursor: pointer;
     transition: 0.3s;
 }
-.clear button:hover
-{
+
+.clear button:hover {
     background: transparent;
     color: bisque;
     border: 2px solid #eeae00;
@@ -130,6 +133,23 @@ h2
         font-size: 20px;
         margin-bottom: 5px; 
     }
+    .input-container h5 {
+        font-size: 18px;
+    }
+    .input-container input {
+        height: 40px;
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    .icon {
+        font-size: 22px;
+        height: 40px;
+        margin-top: 32px;
+    }
+    .clear button {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -138,30 +158,25 @@ h2
         padding: 15px;
         border-radius: 10px;
     }
-
-    .title h2 {
+    h2 {
         font-size: 18px;
         margin-bottom: 5px;
     }
-
-    .input-space h5 {
+    .input-container h5 {
         font-size: 16px;
-        padding-bottom: 65px;
     }
-
-    .input-space input {
-        height: 40px;
+    .input-container input {
+        height: 38px;
         font-size: 16px;
-        padding: 0 10px;
+        padding: 0 8px;
     }
-
-    .input-space .icon {
+    .icon {
         font-size: 20px;
-        height: 40px;
+        height: 38px;
+        margin-top: 30px;
     }
-
     .clear button {
         font-size: 16px;
-        padding: 6px 12px;
+        padding: 5px 10px;
     }
 }
