@@ -20,7 +20,7 @@ body {
     background: #81240a;
     border-radius: 15px;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
-    padding: 30px; 
+    padding: 30px;
     text-align: center;
 }
 
@@ -43,6 +43,7 @@ h2 {
     letter-spacing: 1.3px;
     font-size: 26px;
     margin-bottom: 10px;
+    animation: titleScale 2s infinite alternate;
 }
 
 .input-space {
@@ -64,8 +65,8 @@ h2 {
     font-size: 20px;
     font-weight: 500;
     color: blanchedalmond;
-    text-align: center; 
-    justify-content: center;   
+    text-align: center;
+    justify-content: center;
     margin-left: 30px;
 }
 
@@ -124,28 +125,45 @@ h2 {
     transform: scale(1.05);
 }
 
+@keyframes titleScale {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         max-width: 90%;
         padding: 20px;
     }
+
     h2 {
         font-size: 20px;
-        margin-bottom: 5px; 
+        margin-bottom: 5px;
     }
+
     .input-container h5 {
         font-size: 18px;
     }
+
     .input-container input {
         height: 40px;
         font-size: 18px;
         padding: 0 10px;
     }
+
     .icon {
         font-size: 22px;
         height: 40px;
         margin-top: 32px;
     }
+
     .clear button {
         font-size: 18px;
         padding: 6px 12px;
@@ -158,23 +176,28 @@ h2 {
         padding: 15px;
         border-radius: 10px;
     }
+
     h2 {
         font-size: 18px;
         margin-bottom: 5px;
     }
+
     .input-container h5 {
         font-size: 16px;
     }
+
     .input-container input {
         height: 38px;
         font-size: 16px;
         padding: 0 8px;
     }
+
     .icon {
         font-size: 20px;
         height: 38px;
         margin-top: 30px;
     }
+
     .clear button {
         font-size: 16px;
         padding: 5px 10px;
