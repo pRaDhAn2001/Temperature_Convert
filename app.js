@@ -1,5 +1,5 @@
 let celsiusInput = document.getElementById('celsius');
-let fahrenheitInput = document.getElementById('fahrenheit'); // Corrected spelling
+let fahrenheitInput = document.getElementById('fahrenheit'); 
 let kelvinInput = document.getElementById('kelvin');
 
 let clearButton = document.querySelector('.clear button');
